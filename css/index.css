@@ -1,0 +1,191 @@
+/* Estilos para a seção de Portfólio */
+#portfolio {
+    text-align: center;
+}
+
+.portfolio-image {
+    max-width: 30%;
+    height: auto;
+    border-radius: 50%;
+    margin-top: 0.5em;
+}
+
+#sobre {
+    padding: 3%;
+    background: var(--cor-section);
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px;
+    text-align: center;
+}
+
+.sobre-container {
+    align-items: center;
+    width: 50%;
+    text-align: center;
+}
+
+.sobre-texto {
+    max-width: 100%;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.sobre-texto h2 {
+    text-align: center;
+    color: var(--cor-terciaria);
+}
+
+#sobre .sobre-texto p {
+    text-align: justify;
+}
+
+.sobre-imagem-container {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.sobre-imagem {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    display: inline-block;
+}
+
+#meus-projetos .projetos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#meus-projetos .projeto {
+    width: 80%;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.projeto .projeto-image {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.projeto a {
+    text-decoration: none;
+    display: block;
+}
+
+.projeto a:hover {
+    opacity: 0.8;
+}
+
+.projeto a:hover .projeto-image {
+    transform: scale(1.05);
+}
+
+#meus-projetos .links-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+#meus-projetos .links-container a {
+    display: inline-block;
+    color: #007bff;
+    text-decoration: none;
+    border: 1px solid #007bff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#meus-projetos .links-container a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.desafios-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.desafio-image {
+    width: 350px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.desafios-container a:hover .desafio-image {
+    transform: scale(1.1);
+}
+
+#tecnologias {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+    padding: 3%;
+    background: var(--cor-section);
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px;
+}
+
+#tecnologias .projeto {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    margin-top: 3%;
+    flex-wrap: wrap;
+}
+
+#tecnologias .projeto img {
+    width: 15%;
+    height: auto;
+    max-width: 80px;
+    min-width: 50px;
+}
+
+section h2 {
+    color: var(--cor-terciaria);
+}
+
+@media (max-width: 768px) {
+    #sobre {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .sobre-container {
+        width: 80%;
+        margin-bottom: 2%;
+    }
+
+    .sobre-imagem {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    #logos .projeto img {
+        width: 25%;
+        max-width: 80px;
+        min-width: 50px;
+    }
+}

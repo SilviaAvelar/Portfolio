@@ -1,0 +1,24 @@
+/* Estilos para a seção de apresentação de conteúdo (Sobre Mim) */
+.apresentacao__conteudo__titulo {
+    text-align: center;
+    color: var(--cor-terciaria);
+}
+
+.apresentacao__conteudo__texto {
+    text-align: justify;
+}
+
+.sobre-imagem-container {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.sobre-imagem {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    display: inline-block;
+}

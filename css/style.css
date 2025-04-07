@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lavishly+Yours&family=Monsieur+La_Doulaise&family=Rouge+Script&family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #22d4fd;
+    --cor-section: #363636;
+    --fonte-primaria: "Krona One", serif;
+    --fonte-secundaria: "Montserrat", serif;
+    --fonte-nome: "Lavishly Yours", serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 1%;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 0%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 4%;
+    justify-content: center;
+}
+
+.cabecalho__menu_link {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5em;
+    font-weight: 600;
+    color: var(--cor-secundaria);
+    text-decoration: none;
+}
+
+.nome {
+    font-family: var(--fonte-nome);
+    font-size: 4em;
+    text-rendering: optimizeLegibility;
+    text-align: center;
+    margin-top: 5%;
+}
+
+h2 {
+    text-align: center;
+    color: var(--cor-secundaria);
+    font-weight: bold;
+    margin-top: -0.5em;
+}
+
+.titulo {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: var(--cor-terciaria);
+}
+
+h1 {
+    margin: 0;
+}
+
+section {
+    margin: 5%;
+    padding: 3%;
+    background: var(--cor-section);
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px;
+}
+
+.contato {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+}
+
+#contato a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor-terciaria);
+}
+
+#contato .contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1%;
+}
+
+.contato p {
+    margin: 1% 0;
+}
+
+.rodape {
+    margin: 5%;
+    padding: 3%;
+    background: var(--cor-section);
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    color: var(--cor-secundaria);
+    margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    .cabecalho__menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 3%;
+    }
+
+    .cabecalho__menu_link {
+        font-size: 1.2em;
+    }
+
+    .nome {
+        font-size: 3em;
+    }
+
+    .titulo {
+        font-size: 1em;
+    }
+
+    .contato {
+        width: 90%;
+    }
+
+    .rodape {
+        font-size: 0.9em;
+    }
+}
+
+.social-links-container {
+    display: flex;
+    align-items: center;
+}
+
+.social-links-container strong {
+    margin-right: 0.5em;
+}
+
+.links-container {
+    display: flex;
+    gap: 20px;
+}
+
+.social-links {
+    display: inline-block;
+    margin-left: 0.5em;
+    margin-right: 1em;
+}
+
+.curriculo__secao a[aria-label="LinkedIn"] {
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.curriculo__secao a[aria-label="LinkedIn"] i {
+    margin-right: 0.2em;
+}
+
+.curriculo__secao a[aria-label="GitHub"] {
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.curriculo__secao a[aria-label="GitHub"] i {
+    margin-right: 0.2em;
+}
