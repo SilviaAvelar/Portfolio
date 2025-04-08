@@ -12,6 +12,7 @@
 
 body {
     font-family: Arial, sans-serif;
+    font-size: 1.8em; /* Adicione esta linha */
     padding: 1%;
     background-color: var(--cor-primaria);
     color: var(--cor-secundaria);

@@ -4,5 +4,12 @@
 }
 
 .curriculo__secao h2 {
-    color: var(--cor-terciaria); 
+    color: var(--cor-terciaria);
+}
+
+.curriculo__secao ul li {
+  margin-bottom: 1.1em;
+  line-height: 1.1;
+  padding-bottom: 1em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* opcional, para separar visualmente */
 }
