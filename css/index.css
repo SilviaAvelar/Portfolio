@@ -1,0 +1,413 @@
+/* ========================================= */
+/*            ARQUIVO: index.css             */
+/*      Estilos Específicos: index.html      */
+/* ========================================= */
+
+/* --- Tipografia Principal (Nome e Título) --- */
+.nome {
+  font-family: var(--fonte-nome);
+  font-size: 4em;
+  text-rendering: optimizeLegibility;
+  text-align: center;
+  margin-top: 3%;
+  margin-bottom: 0;
+  color: var(--cor-secundaria);
+}
+
+.titulo {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: var(--cor-terciaria);
+  margin-top: 0.5em;
+  margin-bottom: 3%;
+  font-family: var(--fonte-secundaria);
+}
+
+/* --- Seção Portfolio (Foto Principal) --- */
+#portfolio {
+  text-align: center;
+  background: none; 
+  box-shadow: none; 
+  padding: 0;
+  margin-top: 2%;
+  margin-bottom: 4%;
+}
+
+.portfolio-image {
+  max-width: 250px;
+  width: 60%;
+  height: auto;
+  border-radius: 50%;
+  margin-top: 0.5em;
+  border: 4px solid var(--cor-terciaria);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+}
+
+/* --- Seção Sobre Mim (na Index) --- */
+#sobre {
+  text-align: center;
+}
+
+/* Container do texto */
+.sobre-texto {
+  width: 80%;
+  margin: 0 auto;
+  text-align: left;  
+}
+
+/* Parágrafo dentro da #sobre */
+#sobre .sobre-texto p {
+  text-align: justify;
+  line-height: 1.6;
+  font-size: 1.1em;
+}
+
+/* --- Seção Meus Projetos --- */
+#meus-projetos .projetos-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Card de cada projeto */
+#meus-projetos .projeto {
+  width: 90%;
+  max-width: 950px;
+  border: 1px solid var(--cor-borda); 
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px var(--cor-sombra); 
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.1); 
+}
+
+/* Título h3 dentro do card de projeto */
+#meus-projetos .projeto h3 {
+  color: var(--cor-terciaria); 
+}
+
+/* Parágrafos dentro do card */
+#meus-projetos .projeto p {
+  margin-bottom: 15px;
+  font-size: 1.05em;
+  text-align: justify;  
+}
+
+#meus-projetos .projeto p:last-of-type {
+  margin-bottom: 20px;
+}
+
+/* Imagem GRANDE dentro de um projeto (Heróis, Lista) */
+.projeto .projeto-image {
+  max-width: 80%;
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #444; 
+}
+
+/* Link envolvendo a imagem grande */
+#meus-projetos .projeto a.image-link {
+  display: block; 
+  text-decoration: none;
+}
+
+#meus-projetos .projeto a.image-link:hover .projeto-image {
+  transform: scale(1.03);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Container dos links (GitHub, Ver Aplicação) */
+#meus-projetos .links-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Botões de link */
+#meus-projetos .links-container a {
+  display: inline-block;
+  color: var(--cor-terciaria);
+  text-decoration: none;
+  border: 1px solid var(--cor-terciaria);
+  padding: 8px 18px;
+  border-radius: 5px;
+  background-color: transparent;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+  font-weight: 600;
+  font-size: 0.95em;
+  font-family: var(--fonte-secundaria); 
+}
+
+#meus-projetos .links-container a:hover {
+  background-color: var(--cor-link-botao-hover-bg);
+  color: var(--cor-link-botao-hover-text);
+  transform: translateY(-2px);
+}
+
+/* --- Estilos COMUNS para Prévias (7 Days e Imersão) --- */
+/* Container das Prévias */
+.desafios-container,
+.imersao-dev-previews-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Link envolvendo cada Prévia */
+.desafios-container a,
+.imersao-dev-previews-container a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  width: auto; 
+  transition: transform 0.2s ease;
+}
+
+.desafios-container a:hover,
+.imersao-dev-previews-container a:hover {
+  transform: translateY(-3px);
+}
+
+/* Imagem da Prévia */
+.desafio-image,
+.imersao-preview-image {
+  width: 90%; 
+  max-width: 350px; 
+  height: auto;
+  border: 1px solid var(--cor-borda);
+  margin-bottom: 8px;
+  box-shadow: 3px 3px 8px var(--cor-sombra);
+  border-radius: 8px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out,
+  border-color 0.2s ease;
+}
+
+/* Hover na Imagem da Prévia */
+.desafios-container a:hover .desafio-image,
+.imersao-dev-previews-container a:hover .imersao-preview-image {
+  transform: scale(1.05);
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+  border-color: var(--cor-terciaria);
+}
+
+/* Legenda abaixo da Prévia */
+.desafios-container span,
+.imersao-dev-previews-container span {
+  font-size: 1.2em;
+  margin-top: 8px;
+  font-weight: 500;
+  color: var(--cor-secundaria);
+  width: 95%;
+  max-width: 350px; /* Coerente com max-width da imagem */
+  text-align: center;
+  word-wrap: break-word;
+  line-height: 1.3;
+  font: bold 1em var(--fonte-secundaria); 
+}
+
+/* --- Seção Tecnologias --- */
+#tecnologias {
+  text-align: center;
+}
+
+/* Container dos ícones */
+#tecnologias .tecnologias-icones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  margin-top: 3%;
+  flex-wrap: wrap;
+}
+
+/* Ícone individual */
+#tecnologias .tecnologias-icones img {
+  height: 60px;
+  width: auto;
+  transition: transform 0.2s ease;
+}
+
+#tecnologias .tecnologias-icones img:hover {
+  transform: scale(1.15);
+}
+
+/* --- Seção Ferramentas --- */
+#ferramentas {
+  text-align: center;
+}
+
+/* Container dos ícones */
+#ferramentas .ferramentas-icones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  margin-top: 3%;
+  flex-wrap: wrap;
+}
+
+/* Ícone individual */
+#ferramentas .ferramentas-icones img {
+  height: 60px;
+  width: auto;
+  transition: transform 0.2s ease;
+}
+
+#ferramentas .ferramentas-icones img:hover {
+  transform: scale(1.15);
+}
+
+
+#contato .contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  gap: 15px;
+  width: 90%; 
+  max-width: 600px;
+  margin: 20px auto 0; 
+  padding: 0; 
+}
+
+/* Parágrafos com informações de contato */
+#contato .contato p {
+  margin: 0;
+  font-size: 1.1em;
+  line-height: 1.5; 
+}
+
+/* Ícones */
+#contato .contato p i {
+  margin-right: 10px; 
+  color: var(--cor-terciaria);
+  width: 1.2em; 
+  text-align: center;
+}
+
+/* Links dentro do contato */
+#contato .contato a {
+  font-weight: normal; 
+}
+
+/* ========================================= */
+/*      MEDIA QUERIES PARA INDEX.CSS         */
+/* ========================================= */
+@media (max-width: 768px) {
+  .nome {
+    font-size: 3em;
+  }
+  .titulo {
+    font-size: 1em;
+  }
+
+  #sobre .sobre-texto p {
+    text-align: left;
+    font-size: 1em;
+  }
+
+  #meus-projetos .projeto {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .projeto .projeto-image {
+    max-width: 90%;
+  }
+
+  #meus-projetos .links-container a {
+    font-size: 0.9em;
+    padding: 6px 12px;
+  }
+
+  .desafios-container,
+  .imersao-dev-previews-container {
+    gap: 15px;
+  }
+
+  .desafio-image,
+  .imersao-preview-image {
+    width: 90%; 
+    max-width: 300px;
+    height: auto;
+  }
+
+  .desafios-container span,
+  .imersao-dev-previews-container span {
+    max-width: 300px; 
+    font-size: 0.85em;
+  }
+
+  #tecnologias .tecnologias-icones img {
+    height: 45px;
+  }
+
+  #tecnologias .tecnologias-icones {
+    gap: 20px;
+  }
+
+  #contato .contato {
+    width: 95%;
+  }
+
+  #contato .contato p {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .nome {
+    font-size: 2.5em;
+  }
+  .titulo {
+    font-size: 0.9em;
+  }
+
+  #meus-projetos .links-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  #meus-projetos .links-container a {
+    text-align: center;
+  }
+
+  .desafio-image,
+  .imersao-preview-image {
+    max-width: 250px;
+  }
+
+  .desafios-container span,
+  .imersao-dev-previews-container span {
+    max-width: 250px;
+    font-size: 0.8em;
+  }
+
+  #tecnologias .tecnologias-icones img {
+    height: 40px;
+  }
+  #tecnologias .tecnologias-icones {
+    gap: 15px;
+  }
+
+  #contato .contato p {
+    font-size: 0.95em;
+  }
+  #contato .contato p i {
+    margin-right: 5px;
+  }
+}
