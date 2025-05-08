@@ -41,7 +41,7 @@ Série de desafios de programação para aprimorar habilidades. Inclui projetos 
 ## Como Visualizar Meu Portfólio
 
 Você pode ver o meu portfólio online no seguinte link:  
-https://github.com/SilviaAvelar/Portfolio
+https://silviaavelar.github.io/Portfolio/
 
 ## 🦸‍♀️ Créditos  
 <p align="center">
