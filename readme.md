@@ -21,11 +21,14 @@ Sou Silvia Avelar, uma desenvolvedora web apaixonada por transformar ideias em e
     -   React, Tailwind CSS, Bootstrap
     -   Responsividade e Design Mobile-First
     -   Acessibilidade Web (WCAG) e SEO
+
 -   **Backend:**
     -   Node.js, Express.js
     -   Java, C# (conhecimento básico/em aprendizado)
+
 -   **Banco de Dados:**
     -   MongoDB, PostgreSQL
+
 -   **Ferramentas & Metodologias:**
     -   Git, GitHub, GitLab
     -   Visual Studio Code, IntelliJ IDEA, Postman
@@ -44,13 +47,11 @@ Uma página dinâmica que permite ao usuário explorar personagens, visualizando
 ### 2. Aplicativo de Lista de Espera Full-stack 📝
 Desenvolvi um aplicativo completo para gerenciamento de listas de espera. A aplicação permite aos usuários adicionar, filtrar e visualizar participantes de forma intuitiva e segura.
 -   **Tecnologias:** `Node.js`, `Express`, `MongoDB`, `JavaScript Avançado`
--   **Link do Repositório:** [SilviaAvelar/Lista-de-espera](https://github.com/SilviaAvelar/Lista-de-espera)
--   **Status:** Em Desenvolvimento/Concluído
+-   **Status:** Concluído
 
 ### 3. 7 Days of Code Challenges 💻
 Uma série de desafios de programação focados em solidificar e expandir habilidades de desenvolvimento front-end. Inclui projetos como páginas de login, landing pages, calculadoras e jogos simples.
 -   **Tecnologias:** `HTML`, `CSS`, `JavaScript`
--   **Link do Repositório:** [SilviaAvelar/7DaysOfCode](https://github.com/SilviaAvelar/7DaysOfCode)
 -   **Status:** Concluído
 
 ---
