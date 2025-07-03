@@ -2,13 +2,11 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Silvia Avelar</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/index.css">
-
-    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/index.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
         crossorigin="anonymous"></script>
 </head>
@@ -26,13 +24,13 @@
         <!-- Cabeçalho Pessoal -->
         <div>
             <h1 class="nome">Silvia Avelar</h1>
-            <h2 class="titulo">Desenvolvedora Front-end | HTML, CSS, JavaScript</h2>
+            <h2 class="titulo">Desenvolvedora Web | HTML, CSS, JavaScript, Java & Node.js</h2>
         </div>
 
         <!-- Seção Foto Principal -->
         <section id="portfolio">
             <h2>Portfolio</h2>
-            <img class="portfolio-image" src="assets/Silvia.jpg" alt="Foto de Silvia Avelar">
+            <img class="portfolio-image" src="assets/Silvia.jpg" alt="Foto de Silvia Avelar" />
         </section>
 
         <!-- Seção Sobre Mim -->
@@ -40,13 +38,16 @@
             <div class="sobre-texto">
                 <h2>Sobre Mim</h2>
                 <p>Desenvolvedora Web Júnior</p>
-                <li>Foco na criação de interfaces intuitivas, responsivas e com excelente experiência do usuário (UX)
-                </li>
-                <li>Comprometida com o desenvolvimento de aplicações web funcionais, utilizando HTML, CSS, JavaScript e
-                    princípios de design responsivo</li>
-                <li>Interesse contínuo em aprimorar habilidades em acessibilidade, usabilidade e web performance</li>
-                <li>Perfil proativo, colaborativo e orientado à resolução de problemas</li>
-                <li>Busca constante por aprendizado e crescimento na área de desenvolvimento front-end</li>
+                <ul>
+                    <li>Foco na criação de interfaces intuitivas, responsivas e com excelente experiência do usuário
+                        (UX)</li>
+                    <li>Comprometida com o desenvolvimento de aplicações web funcionais, utilizando HTML, CSS,
+                        JavaScript e princípios de design responsivo</li>
+                    <li>Interesse contínuo em aprimorar habilidades em acessibilidade, usabilidade e web performance
+                    </li>
+                    <li>Perfil proativo, colaborativo e orientado à resolução de problemas</li>
+                    <li>Busca constante por aprendizado e crescimento na área de desenvolvimento front-end</li>
+                </ul>
             </div>
         </section>
 
@@ -54,18 +55,46 @@
         <section id="meus-projetos">
             <h2>Meus Projetos</h2>
             <div class="projetos-container">
+                <!-- Projeto: LiterAlura (Aplicação Full-Stack) -->
+                <div class="projeto">
+                    <h3>LiterAlura - Catálogo de Livros Interativo</h3>
+                    <p>Aplicação Web Full-Stack que permite aos usuários pesquisar livros em tempo real através da API
+                        Gutendex. O frontend interativo se comunica com um backend robusto em Java para salvar e listar
+                        os livros e autores favoritos em um banco de dados.</p>
+                    <p><strong>Frontend:</strong> 🌐 HTML, 🎨 CSS, ☕ JavaScript</p>
+                    <p><strong>Backend:</strong> ☕ Java, 🌱 Spring Boot, 🐘 PostgreSQL, ☁️ Railway</p>
+                    <div class="projeto-imagens-grid">
+                        <a href="https://literalura-frontend.vercel.app/" target="_blank" rel="noopener noreferrer"><img
+                                src="assets/literalura1.png" alt="Imagem 1 do projeto LiterAlura" /></a>
+                        <a href="https://literalura-frontend.vercel.app/" target="_blank" rel="noopener noreferrer"><img
+                                src="assets/literalura2.png" alt="Imagem 2 do projeto LiterAlura" /></a>
+                        <a href="https://literalura-frontend.vercel.app/" target="_blank" rel="noopener noreferrer"><img
+                                src="assets/literalura3.png" alt="Imagem 3 do projeto LiterAlura" /></a>
+                        <a href="https://literalura-frontend.vercel.app/" target="_blank" rel="noopener noreferrer"><img
+                                src="assets/literalura4.png" alt="Imagem 4 do projeto LiterAlura" /></a>
+                    </div>
+                    <div class="links-container">
+                        <a href="https://github.com/SilviaAvelar/literalura-frontend" target="_blank"
+                            rel="noopener noreferrer">Código (Frontend)</a>
+                        <a href="https://github.com/SilviaAvelar/literalura-backend" target="_blank"
+                            rel="noopener noreferrer">Código (Backend)</a>
+                        <a href="https://literalura-frontend.vercel.app/" target="_blank" rel="noopener noreferrer">Ver
+                            Aplicação</a>
+                    </div>
+                </div>
 
-                <!-- Projeto 1: Página de Heróis -->
+                <!-- Projeto: Página de Heróis -->
                 <div class="projeto">
                     <h3>Página de Hérois</h3>
-                    <p>Este projeto é uma página interativa que permite ao usuário selecionar personagens,
-                        exibindo suas descrições e imagens responsivas. Utiliza HTML, CSS e JavaScript para proporcionar
-                        uma experiência dinâmica e moderna, com navegação intuitiva e adaptável a diferentes
-                        dispositivos.</p>
+                    <p>Este projeto é uma página interativa que permite ao usuário selecionar personagens, exibindo suas
+                        descrições e imagens responsivas. Utiliza HTML, CSS e JavaScript para proporcionar uma
+                        experiência dinâmica e moderna, com navegação intuitiva e adaptável a diferentes dispositivos.
+                    </p>
                     <p>Tecnologias: 🌐 HTML, 🎨 CSS, ☕ JavaScript</p>
                     <a href="https://silviaavelar.github.io/ProjetoDevEmDobro/" target="_blank"
                         rel="noopener noreferrer">
-                        <img class="projeto-image" src="assets/herois.png" alt="Imagem da página de seleção de heróis">
+                        <img class="projeto-image" src="assets/herois.png"
+                            alt="Imagem da página de seleção de heróis" />
                     </a>
                     <div class="links-container">
                         <a href="https://github.com/SilviaAvelar/ProjetoDevEmDobro" target="_blank"
@@ -75,17 +104,17 @@
                     </div>
                 </div>
 
-                <!-- Projeto 2: Lista de Espera -->
+                <!-- Projeto: Lista de Espera -->
                 <div class="projeto">
                     <h3>Aplicativo de Lista de Espera Interativa</h3>
-                    <p>Desenvolvi um aplicativo Full-stack de lista de espera com Node.js, Express, MongoDB e
-                        JavaScript avançado. A aplicação permite aos usuários adicionar, filtrar e visualizar
-                        participantes de forma fácil e segura.</p>
+                    <p>Desenvolvi um aplicativo Full-stack de lista de espera com Node.js, Express, MongoDB e JavaScript
+                        avançado. A aplicação permite aos usuários adicionar, filtrar e visualizar participantes de
+                        forma fácil e segura.</p>
                     <p>Tecnologias: 🌐 HTML, 🎨 CSS, ☕ JavaScript, 📢 Toastify, 🔑 JWT, 🛡️ bcrypt, 💾 MongoDB, ⚙️
                         Node.js, ⚡ Express</p>
                     <a href="https://lista-de-espera-red.vercel.app/" target="_blank" rel="noopener noreferrer">
                         <img class="projeto-image" src="assets/tela1.png"
-                            alt="Imagem da tela principal do aplicativo de lista de espera">
+                            alt="Imagem da tela principal do aplicativo de lista de espera" />
                     </a>
                     <div class="links-container">
                         <a href="https://github.com/SilviaAvelar/Lista-de-espera" target="_blank"
@@ -95,12 +124,15 @@
                     </div>
                 </div>
 
-                <!-- Projeto 3: 7 Days of Code -->
+                <!-- Projeto: 7 Days of Code -->
                 <div class="projeto">
                     <h3>7 Days of Code Challenges</h3>
-                    <p>Série de desafios de programação para aprimorar habilidades em HTML, CSS e JavaScript. Inclui
-                        projetos como criação de páginas de login, landing pages, calculadoras, e jogos simples. Cada
-                        desafio visa exercitar diferentes aspectos do desenvolvimento front-end.</p>
+                    <p>
+                        Série de desafios de programação para aprimorar habilidades em
+                        HTML, CSS e JavaScript. Inclui projetos como criação de páginas de
+                        login, landing pages, calculadoras, e jogos simples. Cada desafio
+                        visa exercitar diferentes aspectos do desenvolvimento front-end.
+                    </p>
                     <p>Tecnologias: 🌐 HTML, 🎨 CSS, ☕ JavaScript</p>
                     <!-- Container para as prévias dos 7 Days of Code -->
                     <div class="desafios-container">
@@ -108,42 +140,42 @@
                         <a href="https://7-days-of-code-chi.vercel.app/" target="_blank" rel="noopener noreferrer"
                             title="Ver Desafio 01">
                             <img class="desafio-image" src="assets/desafio_1.png"
-                                alt="Prévia Desafio 1 - 7 Days of Code">
+                                alt="Prévia Desafio 1 - 7 Days of Code" />
                             <span>Desafio de Comparação</span>
                         </a>
                         <!-- Desafio 2 -->
                         <a href="https://7-days-of-code-chi.vercel.app/" target="_blank" rel="noopener noreferrer"
                             title="Ver Desafio 02">
                             <img class="desafio-image" src="assets/desafio_2.png"
-                                alt="Prévia Desafio 2 - 7 Days of Code">
+                                alt="Prévia Desafio 2 - 7 Days of Code" />
                             <span>Questionário Interativo</span>
                         </a>
                         <!-- Desafio 3 -->
                         <a href="https://7-days-of-code-chi.vercel.app/" target="_blank" rel="noopener noreferrer"
                             title="Ver Desafio 03">
                             <img class="desafio-image" src="assets/desafio_3.png"
-                                alt="Prévia Desafio 3 - 7 Days of Code">
+                                alt="Prévia Desafio 3 - 7 Days of Code" />
                             <span>Desafio do Desenvolvedor</span>
                         </a>
                         <!-- Desafio 4 -->
                         <a href="https://7-days-of-code-chi.vercel.app/" target="_blank" rel="noopener noreferrer"
                             title="Ver Desafio 04">
                             <img class="desafio-image" src="assets/desafio_4.png"
-                                alt="Prévia Desafio 4 - 7 Days of Code">
+                                alt="Prévia Desafio 4 - 7 Days of Code" />
                             <span>Jogo da Adivinhação</span>
                         </a>
                         <!-- Desafio 5 -->
                         <a href="https://7-days-of-code-chi.vercel.app/" target="_blank" rel="noopener noreferrer"
                             title="Ver Desafio 05">
                             <img class="desafio-image" src="assets/desafio_5.png"
-                                alt="Prévia Desafio 5 - 7 Days of Code">
+                                alt="Prévia Desafio 5 - 7 Days of Code" />
                             <span>Lista de Compras</span>
                         </a>
-                        <!-- Desafio 6 -->
+                        <!-- Desafio 6/7 -->
                         <a href="https://7-days-of-code-chi.vercel.app/" target="_blank" rel="noopener noreferrer"
                             title="Ver Desafio 06">
                             <img class="desafio-image" src="assets/desafio_6.png"
-                                alt="Prévia Desafio 6 - 7 Days of Code">
+                                alt="Prévia Desafio 6 - 7 Days of Code" />
                             <span>Calculadora</span>
                         </a>
                     </div>
@@ -156,47 +188,50 @@
                     </div>
                 </div>
 
-                <!-- Projeto 4: Imersão Dev Alura -->
+                <!-- Projeto: Imersão Dev Alura -->
                 <div class="projeto">
                     <h3>Imersão Dev Alura-2025</h3>
-                    <p>Conjunto de projetos desenvolvidos durante a Imersão Dev da Alura, explorando conceitos
-                        fundamentais de HTML, CSS e JavaScript através de desafios práticos como calculadora,
-                        conversores e jogos.</p>
+                    <p>
+                        Conjunto de projetos desenvolvidos durante a Imersão Dev da Alura,
+                        explorando conceitos fundamentais de HTML, CSS e JavaScript
+                        através de desafios práticos como calculadora, conversores e
+                        jogos.
+                    </p>
                     <p>Tecnologias: 🌐 HTML, 🎨 CSS, ☕ JavaScript</p>
                     <div class="imersao-dev-previews-container">
                         <!-- Prévia 1 -->
                         <a href="https://codepen.io/SilviaAvelar/pen/YPzRmBN" target="_blank" rel="noopener noreferrer"
                             title="Ver Conversor de Moedas no CodePen">
                             <img class="imersao-preview-image" src="assets/jogo01.png"
-                                alt="Prévia Conversor - Imersão Dev">
+                                alt="Prévia Conversor - Imersão Dev" />
                             <span>Conversor de Moedas</span>
                         </a>
                         <!-- Prévia 2 -->
                         <a href="https://codepen.io/SilviaAvelar/pen/PwoXpRm" target="_blank" rel="noopener noreferrer"
                             title="Ver Batalha Elemental Pokémon! no CodePen">
                             <img class="imersao-preview-image" src="assets/jogo02.png"
-                                alt="Prévia Batalha Elemental Pokémon! - Imersão Dev">
+                                alt="Prévia Batalha Elemental Pokémon! - Imersão Dev" />
                             <span>Batalha Elemental Pokémon!</span>
                         </a>
                         <!-- Prévia 3 -->
                         <a href="https://codepen.io/SilviaAvelar/pen/vEYvqLz" target="_blank" rel="noopener noreferrer"
                             title="Ver Travessia de Vidro! no CodePen">
                             <img class="imersao-preview-image" src="assets/jogo03.png"
-                                alt="Prévia Jogo Travessia de Vidro! - Imersão Dev">
+                                alt="Prévia Jogo Travessia de Vidro! - Imersão Dev" />
                             <span>Travessia de Vidro!</span>
                         </a>
                         <!-- Prévia 4 -->
                         <a href="https://codepen.io/SilviaAvelar/pen/LEYqrxN" target="_blank" rel="noopener noreferrer"
                             title="Ver Força ou Queda! no CodePen">
                             <img class="imersao-preview-image" src="assets/jogo04.png"
-                                alt="Prévia Força ou Queda! - Imersão Dev">
+                                alt="Prévia Força ou Queda! - Imersão Dev" />
                             <span>Força ou Queda!</span>
                         </a>
                         <!-- Prévia 5 -->
                         <a href="https://codepen.io/SilviaAvelar/pen/vEYPZja" target="_blank" rel="noopener noreferrer"
                             title="Ver Quiz de Perguntas no CodePen">
                             <img class="imersao-preview-image" src="assets/jogo05.png"
-                                alt="Quiz de Perguntas - Imersão Dev">
+                                alt="Quiz de Perguntas - Imersão Dev" />
                             <span>Quiz de Perguntas!</span>
                         </a>
                     </div>
@@ -214,38 +249,96 @@
         <!-- Seção Tecnologias -->
         <section id="tecnologias">
             <h2>Tecnologias</h2>
-            <div class="tecnologias-icones">
-                <img src="assets/html5.png" alt="HTML5">
-                <img src="assets/css.png" alt="CSS3">
-                <img src="assets/javascript.png" alt="JavaScript">
-                <img src="assets/nodejs.png" alt="Node.js">
-                <img src="assets/mongo-db.png" alt="MongoDB">
-                <img src="assets/java.png" alt="Java">
+            <div class="categoria-container">
+                <!-- Categoria Frontend -->
+                <div class="categoria-item">
+                    <h4>Frontend</h4>
+                    <div class="tecnologias-icones">
+                        <img src="assets/html5.png" alt="HTML5" title="HTML5" />
+                        <img src="assets/css.png" alt="CSS3" title="CSS3" />
+                        <img src="assets/javascript.png" alt="JavaScript" title="JavaScript" />
+                    </div>
+                </div>
+                <!-- Categoria Backend -->
+                <div class="categoria-item">
+                    <h4>Backend</h4>
+                    <div class="tecnologias-icones">
+                        <img src="assets/java.png" alt="Java" title="Java" />
+                        <img src="assets/spring-boot.png" alt="Spring Boot" title="Spring Boot" />
+                        <img src="assets/nodejs.png" alt="Node.js" title="Node.js" />
+                        <img src="assets/express-js.png" alt="Express.js" title="Express.js" />
+                    </div>
+                </div>
+                <!-- Categoria Bancos de Dados -->
+                <div class="categoria-item">
+                    <h4>Bancos de Dados</h4>
+                    <div class="tecnologias-icones">
+                        <img src="assets/postgresql.png" alt="PostgreSQL" title="PostgreSQL" />
+                        <img src="assets/mongo-db.png" alt="MongoDB" title="MongoDB" />
+                    </div>
+                </div>
+                <!-- Categoria Conceitos -->
+                <div class="categoria-item">
+                    <h4>Conceitos</h4>
+                    <div class="tecnologias-icones">
+                        <img src="assets/restApi.png" alt="REST API" title="REST API" />
+                    </div>
+                </div>
             </div>
         </section>
 
+        <!-- Seção Ferramentas -->
         <section id="ferramentas">
-            <h2>Ferramentas</h2>
-            <div class="ferramentas-icones">
-                <img src="assets/visual-studio-code.png" alt="Visual Studio Code">
-                <img src="assets/intellij.png" alt="IntelliJ IDEA">
-                <img src="assets/github2.png" alt="GitHub">
-                <img src="assets/git.png" alt="Git">
-                <img src="assets/postman.png" alt="Postman">
+            <h2>Ferramentas & Plataformas</h2>
+            <div class="categoria-container">
+                <!-- Categoria Desenvolvimento & Versão -->
+                <div class="categoria-item">
+                    <h4>Desenvolvimento & Versão</h4>
+                    <div class="tecnologias-icones">
+                        <img src="assets/visual-studio-code.png" alt="Visual Studio Code" title="Visual Studio Code" />
+                        <img src="assets/intellij.png" alt="IntelliJ IDEA" title="IntelliJ IDEA" />
+                        <img src="assets/git.png" alt="Git" title="Git" />
+                        <img src="assets/github2.png" alt="GitHub" title="GitHub" />
+                    </div>
+                </div>
+                <!-- Categoria Build & Testes -->
+                <div class="categoria-item">
+                    <h4>Build & Testes</h4>
+                    <div class="tecnologias-icones">
+                        <img src="assets/maven.png" alt="Maven" title="Maven" />
+                        <img src="assets/npm.png" alt="NPM" title="NPM" />
+                        <img src="assets/postman.png" alt="Postman" title="Postman" />
+                    </div>
+                </div>
+                <!-- Categoria Deploy & Plataformas -->
+                <div class="categoria-item">
+                    <h4>Deploy & Plataformas</h4>
+                    <div class="tecnologias-icones">
+                        <img src="assets/vercel.png" alt="Vercel" title="Vercel" />
+                        <img src="assets/railway.png" alt="Railway" title="Railway" />
+                    </div>
+                </div>
             </div>
         </section>
-        
 
         <!-- Seção Contato -->
         <section id="contato">
             <h2>Contato</h2>
-            <div class="contato">
-                <p><i class="fas fa-envelope"></i> Email: <a
-                        href="mailto:silvia.avelar@gmail.com">silvia.avelar@gmail.com</a></p>
-                <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/silvia-avelar" target="_blank"
-                        rel="noopener noreferrer">LinkedIn</a></p>
-                <p><i class="fab fa-github"></i> <a href="https://github.com/SilviaAvelar" target="_blank"
-                        rel="noopener noreferrer">GitHub</a></p>
+            <div class="contato-container">
+                <a href="mailto:silvia.avelar@gmail.com" class="contato-item">
+                    <i class="fas fa-envelope fa-2x"></i>
+                    <span>silvia.avelar@gmail.com</span>
+                </a>
+                <a href="https://linkedin.com/in/silvia-avelar" target="_blank" rel="noopener noreferrer"
+                    class="contato-item">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                    <span>/silvia-avelar</span>
+                </a>
+                <a href="https://github.com/SilviaAvelar" target="_blank" rel="noopener noreferrer"
+                    class="contato-item">
+                    <i class="fab fa-github fa-2x"></i>
+                    <span>/SilviaAvelar</span>
+                </a>
             </div>
         </section>
     </main>
@@ -253,7 +346,6 @@
     <footer class="rodape">
         <p>© Desenvolvido por Silvia Avelar</p>
     </footer>
-
 </body>
 
 </html>

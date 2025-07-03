@@ -1,42 +1,46 @@
 /* ========================================= */
-/*            ARQUIVO: style.css           */
+/*              ARQUIVO: style.css           */
 /*    Estilos Globais e Layout Principal     */
 /* ========================================= */
 
-/* --- Fontes --- */
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lavishly+Yours&family=Monsieur+La_Doulaise&family=Rouge+Script&family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+/* ========================================= */
+/*                  FONTES                   */
+/* ========================================= */
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&family=Lavishly+Yours&display=swap");
 
-/* --- Variáveis CSS --- */
+/* ========================================= */
+/*               VARIÁVEIS CSS               */
+/* ========================================= */
 :root {
     --cor-primaria: #000000;
     --cor-secundaria: #f6f6f6;
     --cor-terciaria: #22d4fd;
     --cor-section: #363636;
-    --cor-sombra: rgba(246, 246, 246, 0.1); 
-    --cor-borda: #555; 
+    --cor-sombra: rgba(246, 246, 246, 0.1);
+    --cor-borda: #555;
     --cor-link-botao-hover-bg: var(--cor-terciaria);
     --cor-link-botao-hover-text: var(--cor-primaria);
-
     --fonte-primaria: "Krona One", sans-serif;
     --fonte-secundaria: "Montserrat", sans-serif;
     --fonte-nome: "Lavishly Yours", serif;
 }
 
-/* --- Reset Básico e Box Sizing --- */
+/* ========================================= */
+/*            RESET E CONFIGURAÇÃO           */
+/* ========================================= */
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-
-*,
-*:before,
-*:after {
+*, *::before, *::after {
     box-sizing: inherit;
     margin: 0;
     padding: 0;
 }
 
-/* --- Estilos Globais do Body --- */
+/* ========================================= */
+/*          ESTILOS GLOBAIS DO BODY          */
+/* ========================================= */
 body {
     font-family: var(--fonte-secundaria), Arial, sans-serif;
     font-size: 1.1em;
@@ -49,45 +53,46 @@ body {
     flex-direction: column;
 }
 
-/* --- Estilos Globais para Links --- */
+/* ========================================= */
+/*            ESTILOS GLOBAIS DE LINKS       */
+/* ========================================= */
 a {
     color: var(--cor-terciaria);
-    text-decoration: none; 
+    text-decoration: none;
     transition: color 0.3s ease;
 }
-
 a:hover {
     color: var(--cor-secundaria);
 }
 
-/* --- Estilos do Cabeçalho (Header) --- */
+/* ========================================= */
+/*             CABEÇALHO (HEADER)            */
+/* ========================================= */
 .cabecalho {
-    padding: 2% 0%; 
+    padding: 2% 0%;
     margin-bottom: 2%;
 }
-
 .cabecalho__menu {
     display: flex;
     gap: 4%;
     justify-content: center;
     flex-wrap: wrap;
 }
-
 .cabecalho__menu_link {
     font-family: var(--fonte-secundaria);
     font-size: 1.3em;
     font-weight: 600;
-    color: var(--cor-secundaria); 
-    text-decoration: none;
+    color: var(--cor-secundaria);
     padding: 5px 10px;
     transition: color 0.3s ease;
 }
-
 .cabecalho__menu_link:hover {
-    color: var(--cor-terciaria); 
+    color: var(--cor-terciaria);
 }
 
-/* --- Estilos Gerais para Seções --- */
+/* ========================================= */
+/*                SECTIONS                   */
+/* ========================================= */
 section {
     margin: 4% 5%;
     padding: 3%;
@@ -96,35 +101,120 @@ section {
     box-shadow: 0px 4px 12px var(--cor-sombra);
 }
 
-/* --- Estilos Gerais para Títulos --- */
-h1 { 
+/* ========================================= */
+/*                TÍTULOS                    */
+/* ========================================= */
+h1, h2, h3 {
     margin: 0;
     font-family: var(--fonte-primaria);
-    color: var(--cor-terciaria);
     text-align: center;
+}
+h1 {
+    color: var(--cor-terciaria);
     margin-bottom: 20px;
 }
-
-h2 { 
-    font-family: var(--fonte-primaria);
-    text-align: center;
-    color: var(--cor-terciaria); 
+h2 {
+    color: var(--cor-terciaria);
     font-weight: 600;
     font-size: 1.8em;
-    margin-top: 0;
-    margin-bottom: 30px; 
+    margin-bottom: 30px;
 }
-
-h3 { 
-    font-family: var(--fonte-primaria);
-    color: var(--cor-secundaria); 
-    text-align: center;
+h3 {
+    color: var(--cor-secundaria);
     font-size: 1.4em;
-    margin-top: 0;
     margin-bottom: 15px;
 }
 
-/* --- Estilos do Rodapé (Footer) --- */
+/* ========================================= */
+/*      COMPONENTE GLOBAL: CATEGORIAS        */
+/*         (Tecnologias / Ferramentas)       */
+/* ========================================= */
+.categoria-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px 90px;
+    width: 90%;
+    max-width: 2000px;
+    margin: 30px auto 0;
+}
+.categoria-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.categoria-item h4 {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.3em;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+}
+.tecnologias-icones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+.tecnologias-icones img {
+    height: 50px;
+    width: auto;
+    transition: transform 0.2s ease;
+}
+.tecnologias-icones img:hover {
+    transform: scale(1.15);
+}
+
+/* ========================================= */
+/*      COMPONENTE GLOBAL: CONTATO           */
+/* ========================================= */
+.contato-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.contato-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    color: var(--cor-secundaria);
+    font-size: 1.1em;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+.contato-item:hover {
+    transform: translateY(-5px);
+    color: var(--cor-terciaria);
+}
+.contato-item i {
+    color: var(--cor-terciaria);
+    transition: color 0.2s ease;
+}
+.contato-item:hover i {
+    color: var(--cor-secundaria);
+}
+
+/* Estilo específico para o texto do contato (o span) */
+.contato-item span {
+    color: var(--cor-terciaria);
+    transition: color 0.2s ease; 
+}
+
+/* Opcional: Inverte a cor do texto no hover, igual ao ícone */
+.contato-item:hover span {
+    color: var(--cor-secundaria);
+}
+
+/* ========================================= */
+/*                RODAPÉ (FOOTER)            */
+/* ========================================= */
 .rodape {
     padding: 25px;
     background: var(--cor-section);
@@ -135,67 +225,24 @@ h3 {
     font-size: 1em;
     font-weight: 400;
     color: var(--cor-secundaria);
-    margin-top: auto; 
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 2%;
+    margin: auto 5% 2%;
 }
 
 /* ========================================= */
 /*            MEDIA QUERIES GLOBAIS          */
 /* ========================================= */
-
 @media (max-width: 768px) {
-    body {
-        font-size: 1em;
-    }
-
-    .cabecalho__menu {
-        flex-direction: column; 
-        align-items: center;
-        gap: 15px; 
-    }
-
-    .cabecalho__menu_link {
-        font-size: 1.1em;
-    }
-
-    h2 { 
-        font-size: 1.5em;
-    }
-
-    h3 { 
-        font-size: 1.2em;
-    }
-
-    section {
-        margin: 5% 3%;
-        padding: 4%;
-    }
-
-    .rodape {
-        font-size: 0.9em;
-        padding: 20px;
-        margin-left: 3%;
-        margin-right: 3%;
-    }
+    body { font-size: 1em; }
+    .cabecalho__menu { flex-direction: column; align-items: center; gap: 15px; }
+    .cabecalho__menu_link { font-size: 1.1em; }
+    h2 { font-size: 1.5em; }
+    h3 { font-size: 1.2em; }
+    section { margin: 5% 3%; padding: 4%; }
+    .rodape { font-size: 0.9em; padding: 20px; margin-left: 3%; margin-right: 3%; }
 }
-
 @media (max-width: 480px) {
-    h2 {
-        font-size: 1.3em;
-    }
-
-    h3 {
-        font-size: 1.1em;
-    }
-    
-    .cabecalho__menu_link {
-        font-size: 1em;
-    }
-
-    .rodape {
-        font-size: 0.85em;
-        padding: 15px;
-    }
+    h2 { font-size: 1.3em; }
+    h3 { font-size: 1.1em; }
+    .cabecalho__menu_link { font-size: 1em; }
+    .rodape { font-size: 0.85em; padding: 15px; }
 }

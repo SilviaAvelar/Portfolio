@@ -3,7 +3,11 @@
 /*      Estilos Específicos: index.html      */
 /* ========================================= */
 
-/* --- Tipografia Principal (Nome e Título) --- */
+
+/* ========================================= */
+/*        TIPOGRAFIA: Nome e Título          */
+/* ========================================= */
+
 .nome {
   font-family: var(--fonte-nome);
   font-size: 4em;
@@ -24,11 +28,15 @@
   font-family: var(--fonte-secundaria);
 }
 
-/* --- Seção Portfolio (Foto Principal) --- */
+
+/* ========================================= */
+/*     SEÇÃO PORTFÓLIO (Foto principal)      */
+/* ========================================= */
+
 #portfolio {
   text-align: center;
-  background: none; 
-  box-shadow: none; 
+  background: none;
+  box-shadow: none;
   padding: 0;
   margin-top: 2%;
   margin-bottom: 4%;
@@ -41,29 +49,35 @@
   border-radius: 50%;
   margin-top: 0.5em;
   border: 4px solid var(--cor-terciaria);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* --- Seção Sobre Mim (na Index) --- */
+
+/* ========================================= */
+/*        SEÇÃO SOBRE MIM NA HOME            */
+/* ========================================= */
+
 #sobre {
   text-align: center;
 }
 
-/* Container do texto */
 .sobre-texto {
   width: 80%;
   margin: 0 auto;
-  text-align: left;  
+  text-align: left;
 }
 
-/* Parágrafo dentro da #sobre */
 #sobre .sobre-texto p {
   text-align: justify;
   line-height: 1.6;
   font-size: 1.1em;
 }
 
-/* --- Seção Meus Projetos --- */
+
+/* ========================================= */
+/*           SEÇÃO: Meus Projetos            */
+/* ========================================= */
+
 #meus-projetos .projetos-container {
   display: flex;
   flex-direction: column;
@@ -71,48 +85,45 @@
   gap: 30px;
 }
 
-/* Card de cada projeto */
 #meus-projetos .projeto {
   width: 90%;
   max-width: 950px;
-  border: 1px solid var(--cor-borda); 
+  border: 1px solid var(--cor-borda);
   padding: 25px;
   border-radius: 8px;
-  box-shadow: 0 4px 12px var(--cor-sombra); 
+  box-shadow: 0 4px 12px var(--cor-sombra);
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.1); 
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
-/* Título h3 dentro do card de projeto */
 #meus-projetos .projeto h3 {
-  color: var(--cor-terciaria); 
+  color: var(--cor-terciaria);
 }
 
-/* Parágrafos dentro do card */
 #meus-projetos .projeto p {
   margin-bottom: 15px;
   font-size: 1.05em;
-  text-align: justify;  
+  text-align: justify;
 }
 
 #meus-projetos .projeto p:last-of-type {
   margin-bottom: 20px;
 }
 
-/* Imagem GRANDE dentro de um projeto (Heróis, Lista) */
+/* Imagem grande */
 .projeto .projeto-image {
   max-width: 80%;
   height: auto;
   margin-top: 10px;
   margin-bottom: 20px;
   border-radius: 8px;
+  border: 1px solid #444;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid #444; 
 }
 
-/* Link envolvendo a imagem grande */
+/* Link da imagem */
 #meus-projetos .projeto a.image-link {
-  display: block; 
+  display: block;
   text-decoration: none;
 }
 
@@ -121,7 +132,8 @@
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Container dos links (GitHub, Ver Aplicação) */
+
+/* Botões GitHub / Ver Aplicação */
 #meus-projetos .links-container {
   display: flex;
   flex-wrap: wrap;
@@ -130,7 +142,6 @@
   margin-top: 20px;
 }
 
-/* Botões de link */
 #meus-projetos .links-container a {
   display: inline-block;
   color: var(--cor-terciaria);
@@ -142,7 +153,7 @@
   transition: background-color 0.3s, color 0.3s, transform 0.2s;
   font-weight: 600;
   font-size: 0.95em;
-  font-family: var(--fonte-secundaria); 
+  font-family: var(--fonte-secundaria);
 }
 
 #meus-projetos .links-container a:hover {
@@ -151,8 +162,11 @@
   transform: translateY(-2px);
 }
 
-/* --- Estilos COMUNS para Prévias (7 Days e Imersão) --- */
-/* Container das Prévias */
+
+/* ========================================= */
+/*        PRÉVIAS DE DESAFIOS & IMERSÃO      */
+/* ========================================= */
+
 .desafios-container,
 .imersao-dev-previews-container {
   display: flex;
@@ -160,12 +174,10 @@
   justify-content: center;
   align-items: flex-start;
   gap: 25px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px 0;
   text-align: center;
 }
 
-/* Link envolvendo cada Prévia */
 .desafios-container a,
 .imersao-dev-previews-container a {
   display: flex;
@@ -173,7 +185,7 @@
   align-items: center;
   text-decoration: none;
   color: inherit;
-  width: auto; 
+  width: auto;
   transition: transform 0.2s ease;
 }
 
@@ -182,21 +194,18 @@
   transform: translateY(-3px);
 }
 
-/* Imagem da Prévia */
 .desafio-image,
 .imersao-preview-image {
-  width: 90%; 
-  max-width: 350px; 
+  width: 90%;
+  max-width: 350px;
   height: auto;
   border: 1px solid var(--cor-borda);
   margin-bottom: 8px;
   box-shadow: 3px 3px 8px var(--cor-sombra);
   border-radius: 8px;
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out,
-  border-color 0.2s ease;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out, border-color 0.2s ease;
 }
 
-/* Hover na Imagem da Prévia */
 .desafios-container a:hover .desafio-image,
 .imersao-dev-previews-container a:hover .imersao-preview-image {
   transform: scale(1.05);
@@ -204,53 +213,30 @@
   border-color: var(--cor-terciaria);
 }
 
-/* Legenda abaixo da Prévia */
 .desafios-container span,
 .imersao-dev-previews-container span {
+  font: bold 1em var(--fonte-secundaria);
   font-size: 1.2em;
   margin-top: 8px;
   font-weight: 500;
   color: var(--cor-secundaria);
   width: 95%;
-  max-width: 350px; /* Coerente com max-width da imagem */
+  max-width: 350px;
   text-align: center;
   word-wrap: break-word;
   line-height: 1.3;
-  font: bold 1em var(--fonte-secundaria); 
 }
 
-/* --- Seção Tecnologias --- */
-#tecnologias {
+
+/* ========================================= */
+/*         TECNOLOGIAS & FERRAMENTAS         */
+/* ========================================= */
+
+#tecnologias, #ferramentas {
   text-align: center;
 }
 
-/* Container dos ícones */
-#tecnologias .tecnologias-icones {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 35px;
-  margin-top: 3%;
-  flex-wrap: wrap;
-}
-
-/* Ícone individual */
-#tecnologias .tecnologias-icones img {
-  height: 60px;
-  width: auto;
-  transition: transform 0.2s ease;
-}
-
-#tecnologias .tecnologias-icones img:hover {
-  transform: scale(1.15);
-}
-
-/* --- Seção Ferramentas --- */
-#ferramentas {
-  text-align: center;
-}
-
-/* Container dos ícones */
+#tecnologias .tecnologias-icones,
 #ferramentas .ferramentas-icones {
   display: flex;
   justify-content: center;
@@ -260,59 +246,87 @@
   flex-wrap: wrap;
 }
 
-/* Ícone individual */
+#tecnologias .tecnologias-icones img,
 #ferramentas .ferramentas-icones img {
   height: 60px;
   width: auto;
   transition: transform 0.2s ease;
 }
 
+#tecnologias .tecnologias-icones img:hover,
 #ferramentas .ferramentas-icones img:hover {
   transform: scale(1.15);
 }
 
 
+/* ========================================= */
+/*               CONTATO FINAL               */
+/* ========================================= */
+
 #contato .contato {
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
   gap: 15px;
-  width: 90%; 
+  width: 90%;
   max-width: 600px;
-  margin: 20px auto 0; 
-  padding: 0; 
+  margin: 20px auto 0;
+  padding: 0;
 }
 
-/* Parágrafos com informações de contato */
 #contato .contato p {
   margin: 0;
   font-size: 1.1em;
-  line-height: 1.5; 
+  line-height: 1.5;
 }
 
-/* Ícones */
 #contato .contato p i {
-  margin-right: 10px; 
+  margin-right: 10px;
   color: var(--cor-terciaria);
-  width: 1.2em; 
+  width: 1.2em;
   text-align: center;
 }
 
-/* Links dentro do contato */
 #contato .contato a {
-  font-weight: normal; 
+  font-weight: normal;
 }
 
+
 /* ========================================= */
-/*      MEDIA QUERIES PARA INDEX.CSS         */
+/*     GALERIA DE IMAGENS DO PROJETO         */
 /* ========================================= */
+
+.projeto-imagens-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin: 15px 0 20px;
+}
+
+.projeto-imagens-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  border: 1px solid var(--cor-borda);
+  box-shadow: 3px 3px 8px var(--cor-sombra);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.projeto-imagens-grid a:hover img {
+  transform: scale(1.05);
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+  border-color: var(--cor-terciaria);
+}
+
+
+/* ========================================= */
+/*         MEDIA QUERIES RESPONSIVO          */
+/* ========================================= */
+
 @media (max-width: 768px) {
-  .nome {
-    font-size: 3em;
-  }
-  .titulo {
-    font-size: 1em;
-  }
+  .nome { font-size: 3em; }
+  .titulo { font-size: 1em; }
 
   #sobre .sobre-texto p {
     text-align: left;
@@ -340,23 +354,14 @@
 
   .desafio-image,
   .imersao-preview-image {
-    width: 90%; 
+    width: 90%;
     max-width: 300px;
-    height: auto;
   }
 
   .desafios-container span,
   .imersao-dev-previews-container span {
-    max-width: 300px; 
+    max-width: 300px;
     font-size: 0.85em;
-  }
-
-  #tecnologias .tecnologias-icones img {
-    height: 45px;
-  }
-
-  #tecnologias .tecnologias-icones {
-    gap: 20px;
   }
 
   #contato .contato {
@@ -369,12 +374,8 @@
 }
 
 @media (max-width: 480px) {
-  .nome {
-    font-size: 2.5em;
-  }
-  .titulo {
-    font-size: 0.9em;
-  }
+  .nome { font-size: 2.5em; }
+  .titulo { font-size: 0.9em; }
 
   #meus-projetos .links-container {
     flex-direction: column;
@@ -397,16 +398,10 @@
     font-size: 0.8em;
   }
 
-  #tecnologias .tecnologias-icones img {
-    height: 40px;
-  }
-  #tecnologias .tecnologias-icones {
-    gap: 15px;
-  }
-
   #contato .contato p {
     font-size: 0.95em;
   }
+
   #contato .contato p i {
     margin-right: 5px;
   }

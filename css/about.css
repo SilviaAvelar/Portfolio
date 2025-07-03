@@ -3,11 +3,14 @@
 /*     Estilos Específicos: about.html       */
 /* ========================================= */
 
-/* --- Container da Imagem "Sobre Mim" --- */
+
+/* ========================================= */
+/*          ESTILO: IMAGEM "SOBRE MIM"       */
+/* ========================================= */
+
 .sobre-imagem-container {
     text-align: center;
-    margin-bottom: 30px;
-    margin-top: 30px;
+    margin: 30px 0;
 }
 
 .sobre-imagem {
@@ -21,7 +24,11 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* --- Container Principal do Conteúdo "Sobre Mim" --- */
+
+/* ========================================= */
+/*     CONTAINER PRINCIPAL DO CONTEÚDO       */
+/* ========================================= */
+
 .apresentacao {
     padding: 0 5%;
     margin-bottom: 4%; 
@@ -33,12 +40,15 @@
     padding: 20px;
 }
 
-/* Título H1 da página "Sobre Mim" */
+
+/* ========================================= */
+/*        TEXTO E TÍTULOS DA SEÇÃO "SOBRE"   */
+/* ========================================= */
+
 .apresentacao__conteudo__titulo {
     margin-bottom: 25px;
 }
 
-/* Parágrafos de texto da seção "Sobre Mim" */
 .apresentacao__conteudo__texto {
     text-align: justify;
     margin-bottom: 1.5em;
@@ -52,13 +62,14 @@
 
 
 /* ========================================= */
-/*      MEDIA QUERIES PARA ABOUT.CSS         */
+/*      MEDIA QUERIES PARA RESPONSIVIDADE    */
 /* ========================================= */
+
 @media (max-width: 768px) {
     .sobre-imagem {
         max-width: 250px;
     }
-    
+
     .apresentacao__conteudo__texto {
         text-align: left;
         font-size: 1em;

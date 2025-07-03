@@ -3,17 +3,24 @@
 /*    Estilos Específicos: curriculo.html    */
 /* ========================================= */
 
-/* --- Estilos Gerais para Seções do Currículo --- */
+
+/* ========================================= */
+/*           SEÇÕES GERAIS DO CURRÍCULO      */
+/* ========================================= */
+
 .curriculo__secao {
-  margin-bottom: 30px; 
+  margin-bottom: 30px;
 }
 
-/* Garante espaço antes do rodapé */
 .curriculo__secao:last-of-type {
-  margin-bottom: 4%; 
+  margin-bottom: 4%;
 }
 
-/* --- Títulos das Seções (H2) --- */
+
+/* ========================================= */
+/*             TÍTULOS DAS SEÇÕES            */
+/* ========================================= */
+
 .curriculo__secao h2 {
   text-align: left;
   margin-bottom: 20px;
@@ -21,77 +28,88 @@
   border-bottom: 2px solid var(--cor-terciaria);
 }
 
-/* --- Parágrafos Diretos das Seções (Resumo) --- */
+
+/* ========================================= */
+/*            PARÁGRAFOS DAS SEÇÕES          */
+/* ========================================= */
+
 .curriculo__secao > p {
   text-align: justify;
   margin-bottom: 1em;
   line-height: 1.6;
 }
 
-/* --- Listas Gerais das Seções (Habilidades) --- */
-.curriculo__secao > ul { 
+
+/* ========================================= */
+/*                LISTAS GERAIS              */
+/* ========================================= */
+
+.curriculo__secao > ul {
   list-style-type: disc;
   padding-left: 25px;
   margin-top: 10px;
 }
 
-.curriculo__secao > ul > li { 
+.curriculo__secao > ul > li {
   margin-bottom: 0.8em;
   line-height: 1.5;
 }
 
-/* --- Estilos Específicos para Lista de FORMAÇÕES COMPLEMENTARES --- */
+
+/* ========================================= */
+/*    LISTA: FORMAÇÕES COMPLEMENTARES        */
+/* ========================================= */
+
 .curriculo__secao ul li strong {
   color: var(--cor-secundaria);
 }
 
-/* Div com detalhes do curso dentro de um item de lista de Formações */
 .curriculo__secao ul li .detalhes-curso {
-  display: block;         
-  margin-top: 5px;        
-  margin-left: 20px;      
-  font-size: 0.95em;      
-  color: #ccc;            
-  line-height: 1.4;      
-  text-align: left;       
+  display: block;
+  margin-top: 5px;
+  margin-left: 20px;
+  font-size: 0.95em;
+  color: #ccc;
+  line-height: 1.4;
+  text-align: left;
 }
 
-/* Espaçamento entre itens da lista (Formações) */
 .curriculo__secao ul li:has(.detalhes-curso) {
-  margin-bottom: 1.5em;   
+  margin-bottom: 1.5em;
 }
 
-/* --- Itens de Experiência Profissional --- */
+
+/* ========================================= */
+/*      EXPERIÊNCIA PROFISSIONAL - ITENS     */
+/* ========================================= */
+
 .curriculo__item {
   margin-bottom: 25px;
   padding-left: 15px;
-  border-left: 3px solid var(--cor-terciaria); 
+  border-left: 3px solid var(--cor-terciaria);
 }
 
 .curriculo__item:last-of-type {
   margin-bottom: 0;
 }
 
-/* --- Título do Item de Experiência (H3) --- */
 .curriculo__item h3 {
   text-align: left;
   color: var(--cor-terciaria);
   margin-bottom: 5px;
 }
 
-/* --- Parágrafo do Item de Experiência (Cargo/Data) --- */
-.curriculo__item > p { 
+.curriculo__item > p {
   font-style: italic;
   color: #ccc;
   margin-bottom: 10px;
   text-align: left;
 }
 
-/* --- Lista de Responsabilidades (Dentro da Experiência) --- */
 .curriculo__item ul {
-  list-style-type: circle; 
+  list-style-type: circle;
   margin-top: 5px;
-  padding-left: 20px;     
+  padding-left: 20px;
 }
 
 .curriculo__item ul li {
@@ -100,12 +118,16 @@
   line-height: 1.5;
 }
 
-/* --- Seção Informações Pessoais (Links Sociais) --- */
+
+/* ========================================= */
+/*          LINKS SOCIAIS (INFORMAÇÕES)      */
+/* ========================================= */
+
 .social-links-container {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 5px 15px;       
+  gap: 5px 15px;
   margin-top: 15px;
 }
 
@@ -116,9 +138,9 @@
 }
 
 .social-links {
-  display: inline-flex; 
+  display: inline-flex;
   align-items: center;
-  gap: 8px;             
+  gap: 8px;
   text-decoration: none;
   color: var(--cor-terciaria);
   transition: color 0.3s ease;
@@ -128,79 +150,112 @@
   color: var(--cor-secundaria);
 }
 
-.social-links i { 
+.social-links i {
   font-size: 1.2em;
-  vertical-align: middle; 
+  vertical-align: middle;
 }
 
+
 /* ========================================= */
-/*     MEDIA QUERIES PARA CURRICULO.CSS      */
+/*        MEDIA QUERIES: RESPONSIVIDADE      */
 /* ========================================= */
+
 
 /* --- Tablet (até 768px) --- */
 @media (max-width: 768px) {
+
   .curriculo__secao h2 {
-      text-align: center;
-      border-bottom: none;
-      padding-bottom: 0;
-      margin-bottom: 25px;
+    text-align: center;
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 25px;
+  }
+
+  .curriculo__secao > p {
+    text-align: justify;
   }
 
   .curriculo__secao > p,
-  .curriculo__secao ul, 
+  .curriculo__secao ul,
   .curriculo__item h3,
   .curriculo__item > p,
   .curriculo__item ul li,
   .curriculo__secao ul li .detalhes-curso {
-      text-align: left;
-  }
-
-  .curriculo__secao > p {
-      text-align: justify;
+    text-align: left;
   }
 
   .curriculo__item {
-      padding-left: 10px;
-      border-left-width: 2px;
+    padding-left: 10px;
+    border-left-width: 2px;
   }
 
   .social-links-container {
-      justify-content: center; 
-      margin-top: 20px;
+    justify-content: center;
+    margin-top: 20px;
   }
 
   .curriculo__secao ul li .detalhes-curso {
-      margin-left: 15px; /* Reduz indentação */
+    margin-left: 15px;
   }
 }
 
+
 /* --- Mobile (até 480px) --- */
 @media (max-width: 480px) {
-  body { font-size: 1em; } 
-  .curriculo__secao h2 { font-size: 1.3em; margin-bottom: 20px; }
-  .curriculo__item h3 { font-size: 1.1em; }
+
+  body {
+    font-size: 1em;
+  }
+
+  .curriculo__secao h2 {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+  }
+
+  .curriculo__item h3 {
+    font-size: 1.1em;
+  }
 
   .curriculo__secao p,
-  .curriculo__secao ul li, 
+  .curriculo__secao ul li,
   .curriculo__item p,
   .curriculo__item ul li {
-      font-size: 0.95em;
-      line-height: 1.5;
+    font-size: 0.95em;
+    line-height: 1.5;
   }
 
   .curriculo__secao ul li .detalhes-curso {
-      font-size: 0.9em;
-      line-height: 1.4;
-      margin-left: 10px; 
+    font-size: 0.9em;
+    line-height: 1.4;
+    margin-left: 10px;
   }
 
-  .curriculo__secao { margin-bottom: 25px; }
-  .curriculo__secao:last-of-type { margin-bottom: 6%; } 
+  .curriculo__secao {
+    margin-bottom: 25px;
+  }
 
-  .curriculo__secao > ul { padding-left: 20px; } 
-  .curriculo__item { padding-left: 8px; margin-bottom: 20px; }
-  .curriculo__item ul { padding-left: 18px; } 
+  .curriculo__secao:last-of-type {
+    margin-bottom: 6%;
+  }
 
-  .social-links-container { gap: 8px 10px; } 
-  .social-links i { font-size: 1.1em; } 
+  .curriculo__secao > ul {
+    padding-left: 20px;
+  }
+
+  .curriculo__item {
+    padding-left: 8px;
+    margin-bottom: 20px;
+  }
+
+  .curriculo__item ul {
+    padding-left: 18px;
+  }
+
+  .social-links-container {
+    gap: 8px 10px;
+  }
+
+  .social-links i {
+    font-size: 1.1em;
+  }
 }
